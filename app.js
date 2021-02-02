@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: 'https://protected-anchorage-34990.herokuapp.com',
+    origin: process.env.URL_CLIENT,
   })
 );
 
